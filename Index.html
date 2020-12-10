@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Data Customer</title>
+        <script src="angular.min.js"></script>
+        <script src="script.js"></script>   
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div ng-app ="myApp" ng-controller="Cust">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>NAMA</th>
+                    <th>ALAMAT</th>
+                    <th>KOTA</th>
+                    <th>PENDAPATAN</th>
+                    <th>ACTION</th>
+                </tr>
+                <tr ng-repeat="cus in custom">
+                    <td>{{ cus.CUST_ID }}</td>
+                    <td>{{ cus.NAMA }}</td>
+                    <td>{{ cus.ALAMAT }}</td>
+                    <td>{{ cus.ID_KOTA }}</td>
+                    <td>{{ cus.PENDAPATAN }}</td>
+                    <td>{{ cus.CUST_ID }}</td>
+                    <td><a href="Edit" href="delete"> </a></td>
+                </tr>
+            </table>
+            <a href="cetak.php"></a>
+        </div>
+    </body>
+</html>
